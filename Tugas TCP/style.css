@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000;
+  }
+  /* Tambahkan gaya CSS untuk ukuran tampilan output yang lebih kecil */
+/* ... */
+
+.output {
+  text-align: center;
+  margin-top: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Untuk mengatur tampilan output ke tengah */
+}
+
+/* ... */
+
+
+.horizontal {
+    transform: scaleX(-1);
+}
+
+.vertical {
+    transform: scaleY(-1);
+}
+
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .input-form {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    
+    
+  }
+  
+  input-form input[type="file"] {
+    display: none;
+  }
+  
+/* Tambahkan gaya CSS yang sudah ada */
+.btn-danger {
+  margin-top: 17px; /* Atur jarak ke atas sesuai kebutuhan */
+}
+label {
+  margin-bottom: 15px;
+  display:block ; /* Menambahkan jarak ke bawah */
+}
+.output img {
+    max-width: 50%;
+    height: auto;
+}
+
+.horizontal {
+    transform: scaleX(-1);
+}
+
+.vertical {
+    transform: scaleY(-1);
+}
+
+
+  .input-form .custom-file-input {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+  .input-form .custom-file-input::before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #007bff;
+    margin-right: 2rem;
+  }
+  .output {
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+
+  .btn {
+    margin-bottom: 25px;
+    }
+
+  /* .btn-success{
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #e1170499;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: 0 0 10px 0 #dcb7a7;
+    }
+  } */
+
+ 
+  .btn  {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: 0 0 10px 0 #0069d9;
+    }
+  }
+  

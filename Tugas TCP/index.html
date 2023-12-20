@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Image Processor</h1>
+    <div class="container">
+        <div class="input-form">
+            <label for="gambar">Upload Gambar:</label>
+            <input type="file" id="gambar" accept="image/*" name="gambar">
+        </div>
+        <div class="output">
+            <canvas id="outputCanvas"></canvas>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" onclick="changeOrientation('horizontal')">Horizontal</button>
+            <button type="button" class="btn btn-success" onclick="changeOrientation('vertical')">Vertikal</button>
+            <button type="button" class="btn btn-warning" onclick="restartImage()">Restart</button>
+            <label for="brightnessRange">Brightness: <span id="brightnessValue">100</span></label>
+            <input type="range" id="brightnessRange" min="0" max="200" value="100" step="1"
+                oninput="adjustBrightness(this.value)">
+            <label for="darknessRange">Darkness: <span id="darknessValue">0</span></label>
+            <input type="range" id="darknessRange" min="0" max="100" value="0" step="1"
+                oninput="adjustDarkness(this.value)">
+            <button type="button" class="btn btn-secondary" onclick="adjustGrayscale()">Grayscale</button>
+            <button type="button" class="btn btn-custom" onclick="detectEdges()">Detect Edges</button>
+            <button type="button" class="btn btn-info" id="downloadBtn" disabled>Download</button> <!-- Menambahkan tombol download -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
